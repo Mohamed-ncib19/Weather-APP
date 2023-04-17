@@ -54,6 +54,7 @@ let weather = {
         displayCountry.innerHTML = country
         displayCondition.innerHTML = condition
         conditionIcon.src = icon
+        conditionIcon.style.display = "block"
         conditionResult.innerHTML = condition
         humidityPercentageDisplay.innerHTML = humiditypercentage + '%'
         windspeedDisplay.innerHTML = windSpeed + 'mp/h'
