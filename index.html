@@ -10,19 +10,19 @@
   </head>
 
   <body
-    class="bg-no-repeat bg-cover bg-[url('/src/assets/images/main.jpg')] backdrop-blur-lg h-screen flex justify-center items-center"
+    class="bg-no-repeat bg-cover bg-[url('/src/assets/images/main.jpg')] backdrop-blur-md h-screen flex justify-center items-center"
   >
     <div
       id="app"
-      class="flex m-auto justify-between align-middle bg-[url('/src/assets/images/main.jpg')] bg-no-repeat bg-cover w-3/4 h-3/4 font-thin "
+      class="flex md:flex-row flex-col-reverse gap-4 m-auto justify-between align-middle bg-[url('/src/assets/images/main.jpg')] bg-no-repeat bg-cover md:w-3/4 w-full md:h-3/4 h-full font-thin "
     >
       <div
         id="result"
-        class="flex flex-row m-auto justify-around gap-4 w-auto text-white md:float-left"
+        class="flex md:flex-row flex-col m-auto justify-around items-center w-full gap-4 text-white md:float-left p-8"
       >
-        <h1 id="degree" class="text-7xl"></h1>
+        <h1 id="degree" class="text-[4rem]"></h1>
         <div class="flex flex-col m-auto">
-          <h3 id="displayCountry" class="text-3xl "></h3>
+          <h3 id="displayCountry" class="text-[2.5rem] "></h3>
           <h4 id="date" class="my-auto w-full"></h4>
         </div>
         <div class="flex flex-row m-auto justify-self-auto">
@@ -37,7 +37,7 @@
       </div>
       <div
         id="search-informations"
-        class="backdrop-blur-lg w-1/3 flex flex-col float-left  gap-7"
+        class="backdrop-blur-md md:w-1/3 w-full flex flex-col float-left  gap-7 text-[1rem] mt-5 "
       >
         <div id="searchBlock" class="flex justify-between">
           <input
@@ -50,7 +50,7 @@
             
           />
           <button
-            class="bg-orange-500 w-1/4 m-auto hover:bg-orange-300 shadow-lg shadow-orange-800"
+            class="bg-orange-500 w-1/4 m-auto hover:bg-orange-300 shadow-md shadow-orange-800"
             style="
               height: 4rem;
               display: flex;
@@ -81,9 +81,9 @@
             </svg>
           </button>
         </div>
-        <br />
-        <hr />
-        <div id="informations" class="flex flex-col p-2 gap-10">
+        
+        
+        <div id="informations" class="flex flex-col p-2 gap-12 border-t-2">
           <h5 class="">Weather Details</h5>
           <div id="conditions" class="flex flex-col gap-9">
             <div id="con" class="flex justify-between">
